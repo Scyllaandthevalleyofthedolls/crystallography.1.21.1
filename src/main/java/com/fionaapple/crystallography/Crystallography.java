@@ -13,9 +13,8 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -33,11 +32,10 @@ public class Crystallography {
     public static final DeferredRegister<net.minecraft.world.level.levelgen.feature.Feature<?>> FEATURES =
             DeferredRegister.create(Registries.FEATURE, MODID);
 
-    public static final Supplier<Block> SHALE = BLOCKS.register("shale", () -> new Block(BlockBehaviour.Properties.of()
-            .mapColor(MapColor.STONE)
-            .strength(3.0F, 3.0F)
-            .requiresCorrectToolForDrops()
-            .sound(SoundType.STONE)));
+    public static final Supplier<Block> SHALE = BLOCKS.register("shale",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)
+                    .strength(3.0F, 3.0F)
+                    .requiresCorrectToolForDrops()));
     public static final Supplier<Item> SHALE_ITEM = ITEMS.register("shale",
             () -> new BlockItem(SHALE.get(), new Item.Properties()));
     public static final Supplier<Item> RAW_SHALE = ITEMS.register("raw_shale",
