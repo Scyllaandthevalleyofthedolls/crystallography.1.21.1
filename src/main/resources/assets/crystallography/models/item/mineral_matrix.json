@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "crystallography:item/mineral_matrix",
+    "layer1": "crystallography:item/mineral_matrix_dye_overlay"
+  }
+}

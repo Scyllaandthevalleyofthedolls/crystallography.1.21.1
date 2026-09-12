@@ -40,6 +40,8 @@ public class Crystallography {
             () -> new BlockItem(SHALE.get(), new Item.Properties()));
     public static final Supplier<Item> RAW_SHALE = ITEMS.register("raw_shale",
             () -> new Item(new Item.Properties()));
+    public static final Supplier<Item> MINERAL_MATRIX = ITEMS.register("mineral_matrix",
+            () -> new MineralMatrixItem(new Item.Properties()));
     public static final Supplier<CreativeModeTab> CRYSTALLOGRAPHY_TAB = CREATIVE_MODE_TABS.register("crystallography",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.crystallography"))
@@ -47,6 +49,7 @@ public class Crystallography {
                     .displayItems((parameters, output) -> {
                         output.accept(SHALE_ITEM.get());
                         output.accept(RAW_SHALE.get());
+                        output.accept(MINERAL_MATRIX.get());
                     })
                     .build());
 

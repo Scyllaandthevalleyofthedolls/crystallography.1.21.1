@@ -1,5 +1,6 @@
 {
   "block.crystallography.shale": "Shale",
   "item.crystallography.raw_shale": "Raw Shale",
+  "item.crystallography.mineral_matrix": "Mineral Matrix",
   "itemGroup.crystallography": "Crystallography"
 }
