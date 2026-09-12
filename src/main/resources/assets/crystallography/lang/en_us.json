@@ -1,0 +1,13 @@
+{
+  "itemGroup.crystallography": "Example Mod Tab",
+  "block.crystallography.example_block": "Example Block",
+  "item.crystallography.example_item": "Example Item",
+
+  "crystallography.configuration.title": "Crystallography Configs",
+  "crystallography.configuration.section.crystallography.common.toml": "Crystallography Configs",
+  "crystallography.configuration.section.crystallography.common.toml.title": "Crystallography Configs",
+  "crystallography.configuration.items": "Item List",
+  "crystallography.configuration.logDirtBlock": "Log Dirt Block",
+  "crystallography.configuration.magicNumberIntroduction": "Magic Number Text",
+  "crystallography.configuration.magicNumber": "Magic Number"
+}
