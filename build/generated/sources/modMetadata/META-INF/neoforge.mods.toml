@@ -1,4 +1,4 @@
-# This is an example neoforge.mods.toml file. It contains the data relating to the loading mods.
+# This file contains the metadata used to load Crystallography.
 # There are several mandatory fields (#mandatory), and many more that are optional (#optional).
 # The overall format is standard TOML format, v0.5.0.
 # Note that there are a couple of TOML lists in this file.
@@ -46,7 +46,7 @@ displayName="Crystallography" #mandatory
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Example mod description.
+Crystallography is a NeoForge mod for Minecraft 1.21.1.
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
