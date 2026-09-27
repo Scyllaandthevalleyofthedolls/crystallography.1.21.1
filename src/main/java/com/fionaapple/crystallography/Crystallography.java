@@ -42,6 +42,15 @@ public class Crystallography {
             () -> new Item(new Item.Properties()));
     public static final Supplier<Item> MINERAL_MATRIX = ITEMS.register("mineral_matrix",
             () -> new MineralMatrixItem(new Item.Properties()));
+    public static final Supplier<Block> DRAINED_BLOCK = BLOCKS.register("drained_block",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT).strength(0.5F)));
+    public static final Supplier<Item> DRAINED_BLOCK_ITEM = ITEMS.register("drained_block",
+            () -> new BlockItem(DRAINED_BLOCK.get(), new Item.Properties()));
+    public static final Supplier<Block> GEM_SEED = BLOCKS.register("gem_seed",
+            () -> new GemSeedBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT).randomTicks()
+                    .noCollission().instabreak()));
+    public static final Supplier<Item> GEM_SEED_ITEM = ITEMS.register("gem_seed",
+            () -> new GemSeedItem(new Item.Properties()));
     public static final Supplier<CreativeModeTab> CRYSTALLOGRAPHY_TAB = CREATIVE_MODE_TABS.register("crystallography",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.crystallography"))
@@ -50,6 +59,7 @@ public class Crystallography {
                         output.accept(SHALE_ITEM.get());
                         output.accept(RAW_SHALE.get());
                         output.accept(MINERAL_MATRIX.get());
+                        output.accept(GEM_SEED_ITEM.get());
                     })
                     .build());
 

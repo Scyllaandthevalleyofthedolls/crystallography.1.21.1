@@ -2,5 +2,8 @@
   "block.crystallography.shale": "Shale",
   "item.crystallography.raw_shale": "Raw Shale",
   "item.crystallography.mineral_matrix": "Mineral Matrix",
+  "item.crystallography.gem_seed": "Gem Seed",
+  "block.crystallography.gem_seed": "Gem Seed",
+  "block.crystallography.drained_block": "Drained Block",
   "itemGroup.crystallography": "Crystallography"
 }
